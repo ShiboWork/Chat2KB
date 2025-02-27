@@ -12,7 +12,7 @@ class dsClient(ABC):
         self.conversation_log = []
         self.max_log_entries = 1000
         self.history_dir = "./chatHistory"
-        self._bRecordFlag = false
+        self._bRecordFlag = False
 
     @abstractmethod
     def _build_system_prompt(self, knowledge):
